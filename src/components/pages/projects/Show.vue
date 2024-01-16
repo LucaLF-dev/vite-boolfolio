@@ -13,11 +13,17 @@
 
 <script>
 export default {
+    props: {
+        slug: String
+    },
 data() {
     return {
-        
+        project: null,
+        BASE_URL: "http://127.0.0.1:8000/api",
     }
-}
+},
+methods: {}
+    
 };
 </script>
 

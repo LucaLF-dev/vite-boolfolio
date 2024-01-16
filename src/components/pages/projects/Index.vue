@@ -13,7 +13,7 @@ export default {
 		};
 	},
 	methods: {
-		fetchPosts() {
+		fetchProject() {
 			axios.get(`${this.BASE_URL}/projects`).then((res) => {
 				console.log(res.data.results);
 				this.projects = res.data.results;
@@ -21,7 +21,7 @@ export default {
 		},
 	},
 	created() {
-		this.fetchPosts();
+		this.fetchProject();
 	},
 };
 </script>
