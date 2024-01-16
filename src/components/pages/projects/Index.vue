@@ -29,7 +29,7 @@ export default {
 <template>
 	<div>
 		<div class="container">
-			<h1 class="page_title">I nostri Progetti</h1>
+			<h1 class="page_title">I miei Progetti</h1>
 		</div>
 		<div class="container">
 			<div class="grid">
