@@ -9,7 +9,9 @@
 					<li>
                         <router-link :to="{ name: 'projects.index'}">Progetti</router-link>
                     </li>
-					<li></li>
+					<li>
+						<router-link :to="{ name: 'contacts' }">Contatti</router-link>
+					</li>
 				</ul>
 			</nav>
 		</div>
