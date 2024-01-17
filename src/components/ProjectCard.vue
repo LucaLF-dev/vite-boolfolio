@@ -2,7 +2,8 @@
 	
 		<div class="card card-project">
 			<h1>{{ project.title }}</h1>
-			<p>{{ project.description }}</p>
+			<h3>{{ project.type.name }}</h3>
+			<route-link :to="{ name:'portfolio.show', params: { slug: project.slug}}"> leggi la descrizione</route-link> 
 		</div>
 	
 </template>

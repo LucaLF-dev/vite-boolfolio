@@ -16,7 +16,7 @@ export default {
 		fetchProject() {
 			axios.get(`${this.BASE_URL}/projects`).then((res) => {
 				console.log(res.data.results);
-				this.projects = res.data.results;
+				this.projects = res.data.results.data;
 			});
 		},
 	},
@@ -36,8 +36,8 @@ export default {
 				<ProjectCard
 					class="card project-card"
 					v-for="project in projects"
-					:project="project"
-					:key="project.id"
+					:project="project" :key="project.id"
+					
 				/>
 			</div>
 		</div>
