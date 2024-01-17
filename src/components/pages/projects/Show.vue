@@ -1,9 +1,11 @@
 
 <template>
 	
-    <div v-if="post">
+    <div v-if="project">
     <div class="container">
-      <h1>{{  post.title }}</h1>
+        <p>titolo</p>
+      <h1>{{  project.title }}</h1>
+      <h3>{{ project.type.id }}</h3>
       
     </div>
 
